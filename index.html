@@ -12,7 +12,7 @@
     <!-- Fim Bootstrap CSS -->
 
     <!-- Meus CSS's -->
-    <link rel="stylesheet" href="styles/colors.css">
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/index.css">
     <!-- Fim Meus CSS's -->
 </head>
@@ -20,46 +20,13 @@
 <body>
     <div class="d-flex flex-column min-vh-100">
         <!-- Header -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <!-- Icone Home -->
-                <a class="navbar-brand" href="#">
-                    <img src="imgs/svgs/house.svg" class="img-fluid nav-icon" alt="">
-                </a>
-                <!-- Fim Icone Home -->
-
-                <!-- Navbar Links Hamburguer -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Fim Navbar Links Hamburguer -->
-
-                <!-- Navbar Links -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Diversos</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Fim Navbar Links -->
-            </div>
-        </nav>
+        <div id="header"></div>
         <!-- Fim Header -->
 
         <!-- Main -->
         <div class="container m-auto">
+            <h1 class="text-center">Vitor Hugo Aguiar Paduan</h1>
+            <hr>
             <div class="row">
                 <!--Imagem -->
                 <div class="col-md-6">
@@ -75,10 +42,10 @@
                     <div class="block">
                         <p>
                             <img src="/imgs/svgs/code.svg" class="img-fluid icon me-1" alt="">
-                            Tenho uma grande afinidade com tecnologia e desenvolvimento de software. Tenho formação
+                            Tenho uma grande afinidade com tecnologia e desenvolvimento de software. Possuo formação
                             técnica
                             em <span class="fw-semibold">Desenvolvimento de Sistemas</span> pelo Senai/PR (2024) e
-                            atualmente curso Tecnólogo em <span class="fw-semibold">Análise e
+                            atualmente estou cursando Tecnólogo em <span class="fw-semibold">Análise e
                                 Desenvolvimento de Sistemas</span> na FAEX/MG.
                         </p>
                     </div>
@@ -105,8 +72,13 @@
 
                     <ul class="d-flex ul-links p-0">
                         <li class="li-link me-2">
+                            <a class="btn btn-outline-light btn-floating m-0 p-0" href="pages/habilidades.html" role="button">
+                                <p class="m-0 p-2 fw-bold">Habilidades</p>
+                            </a>
+                        </li>
+                        <li class="li-link me-2">
                             <a class="btn btn-outline-light btn-floating m-0 p-0" href="#!" role="button">
-                                <p class="m-0 p-2 fw-bold">Sobre Mim</p>
+                                <p class="m-0 p-2 fw-bold">Formação</p>
                             </a>
                         </li>
                         <li class="li-link me-2">
@@ -127,41 +99,7 @@
         <!-- Fim Main -->
 
         <!-- Footer -->
-        <footer class="footer text-center text-light p-3">
-            <small>Criado por Vitor Paduan! &copy;2025.</small>
-
-            <section class="ms-3 mt-2">
-                <!-- LinkedIn -->
-                <a class="btn btn-outline-dark btn-floating m-0 p-1 rounded-circle" href="#!" role="button">
-                    <img src="imgs/svgs/linkedin.svg" class="img-fluid footer-icon" alt="">
-                </a>
-                <!-- Fim LinkedIn -->
-
-                <!-- Google -->
-                <a class="btn btn-outline-dark btn-floating m-0 p-1 rounded-circle" href="#!" role="button">
-                    <img src="imgs/svgs/google.svg" class="img-fluid footer-icon" alt="">
-                </a>
-                <!-- Fim Google -->
-
-                <!-- GitHub -->
-                <a class="btn btn-outline-dark btn-floating m-0 p-1 rounded-circle" href="#!" role="button">
-                    <img src="imgs/svgs/github.svg" class="img-fluid footer-icon" alt="">
-                </a>
-                <!-- Fim GitHub -->
-
-                <!-- Whatsapp -->
-                <a class="btn btn-outline-dark btn-floating m-0 p-1 rounded-circle" href="#!" role="button">
-                    <img src="imgs/svgs/whatsapp.svg" class="img-fluid footer-icon" alt="">
-                </a>
-                <!-- Fim Whatsapp -->
-
-                <!-- Instagram -->
-                <a class="btn btn-outline-dark btn-floating m-0 p-1 rounded-circle" href="#!" role="button">
-                    <img src="imgs/svgs/instagram.svg" class="img-fluid footer-icon" alt="">
-                </a>
-                <!-- Fim Instagram -->
-            </section>
-        </footer>
+        <div id="footer"></div>
         <!-- Fim Footer -->
     </div>
 

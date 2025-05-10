@@ -1,0 +1,33 @@
+.title-icon {
+    filter: invert(100%);
+    height: 2rem;
+}
+
+.icon {
+    filter: invert(100%);
+    width: 2rem;
+}
+
+.block {
+    background-color: rgba(61, 68, 77, 0.3);
+    transition: 0.5s;
+}
+
+.block:hover {
+    background-color: rgba(61, 68, 77, 0.5);
+}
+
+.block .icon {
+    filter: invert(100%);
+    width: 7rem;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.block:hover .icon {
+    transform: scale(1.1);
+}
+
+.progress-bar {
+    background-color: var(--verde);
+}

@@ -1,0 +1,40 @@
+:root {
+    --preto: #010409;
+    --petroleo: #0D1117;
+    --petroleo: rgb(13, 17, 23);
+    --cinza-escuro: #151B23;
+    --cinza-claro: #3D444D;
+
+    --verde: #29903B;
+    --azul: #0D2DB7;
+
+    --caramelo: #E6B17E;
+    --caramelo-escuro: #C28F63;
+}
+
+body {
+    background-color: var(--petroleo);
+    color: white;
+}
+
+p {
+    margin: 0;
+}
+
+.navbar {
+    background-color: var(--preto);
+}
+
+.nav-icon {
+    width: 40px;
+    filter: invert(100%);
+}
+
+.footer {
+    background-color: var(--preto);
+}
+
+.footer-icon {
+    width: 40px;
+    filter: invert(100%);
+}
