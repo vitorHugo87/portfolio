@@ -1,5 +1,5 @@
 // Importando Header e Footer
-fetch('/portifolio/pages/header.html').then(response => response.text()).then(data => {
+fetch('pages/header.html').then(response => response.text()).then(data => {
     document.getElementById('header').innerHTML = data;
 
     // Seleciona todos os <a> dentro da navbar
@@ -11,7 +11,7 @@ fetch('/portifolio/pages/header.html').then(response => response.text()).then(da
     });
 });
 
-fetch('/portifolio/pages/footer.html').then(response => response.text()).then(data => {
+fetch('pages/footer.html').then(response => response.text()).then(data => {
     document.getElementById('footer').innerHTML = data;
     // Aplicando ano atual no copyright do footer
     document.getElementById('ano').textContent = new Date().getFullYear();
