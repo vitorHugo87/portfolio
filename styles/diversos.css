@@ -1,0 +1,63 @@
+.title-icon {
+    filter: invert(100%);
+    height: 2rem;
+}
+
+.icon {
+    filter: invert(100%);
+    width: 2rem;
+}
+
+.card {
+    --bs-card-border-width: 0px;
+}
+
+.card-link-r,
+.card-link-l {
+    transform: scale(1) rotate(0deg);
+    transition: 0.5s;
+}
+
+.card-link-r:hover {
+    transform: scale(1.02) rotate(1deg);
+}
+
+.card-link-l:hover {
+    transform: scale(1.02) rotate(-1deg);
+}
+
+.card-link-r:hover .card-body,
+.card-link-l:hover .card-body {
+    background-color: rgba(61, 68, 77, 0.5);
+}
+
+.card-body {
+    background-color: rgba(61, 68, 77, 0.3);
+    transition: 0.5s;
+}
+
+.progress-bar {
+    background-color: var(--verde);
+}
+
+.truncar-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.truncar-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tags {
+    color: rgba(255, 255, 255, 0.7);
+}
