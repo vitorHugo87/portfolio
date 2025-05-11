@@ -70,3 +70,56 @@
 .tags {
     color: rgba(255, 255, 255, 0.7);
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .altura-fixa {
+        height: 677px;
+    }
+
+    .truncar-6 {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .altura-fixa {
+        height: 448px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .altura-fixa {
+        height: 608px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .altura-fixa {
+        height: 245px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .altura-fixa {
+        height: 282px;
+    }
+
+    .truncar-6 {
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
