@@ -1,0 +1,27 @@
+.filter-invert {
+    filter: invert(100%);
+}
+
+.fade-bottom {
+    mask-image: linear-gradient(to bottom, 
+        black 50%, 
+        transparent 100%
+    );
+
+    -webkit-mask-image: linear-gradient(to bottom, 
+        black 50%, 
+        transparent 100%
+    );
+}
+
+.fade-bottom-smooth {
+    mask-image: linear-gradient(to bottom, 
+        black 70%, 
+        transparent 100%
+    );
+
+    -webkit-mask-image: linear-gradient(to bottom, 
+        black 70%, 
+        transparent 100%
+    );
+}
