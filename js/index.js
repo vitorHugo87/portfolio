@@ -1,10 +1,14 @@
 const dateNow = new Date();
 
 // Atualiza a idade automaticamente
-document.querySelectorAll(".age").forEach(el => el.innerHTML = dateNow.getFullYear() - 2005);
+let age = dateNow.getFullYear() - ((dateNow.getMonth() > 4) ? 2005 : 2006);
+console.log(dateNow.getFullYear());
+console.log(dateNow.getMonth());
+console.log(age);
+document.querySelectorAll(".age").forEach(el => el.innerHTML = age);
 
 // Atualiza a badge de programador automaticamente
-const roundedYearsProgramming = Math.round((dateNow.getFullYear() - 2023) + (dateNow.getMonth() / 12))
+const roundedYearsProgramming = Math.round((dateNow.getFullYear() - 2023))
 document.getElementById("years-programming").innerHTML = roundedYearsProgramming;
 
 const elAdeptness = document.getElementById("adeptness");
@@ -13,8 +17,7 @@ else if (roundedYearsProgramming >= 8) elAdeptness.innerHTML = "Avançado";
 else if (roundedYearsProgramming >= 12) elAdeptness.innerHTML = "Profissional";
 
 // Atualiza o footer automaticamente
-// document.getElementById("footer-copyright").innerHTML = dateNow.getFullYear();
-
+document.getElementById("footer-copyright").innerHTML = dateNow.getFullYear();
 
 // Banner de Imagens
 const img1 = { "id": 1, "path": "media/gifs/spare8_ace_combat.gif", "desc": "Ace Combat 7: Skies Unknown" };
@@ -39,7 +42,6 @@ document.querySelectorAll(".preview-img").forEach(el => {
     el.src = oldImage.path;
   });
 });
-
 
 // Ativando Tooltips do Bootstrap
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
